@@ -1,18 +1,18 @@
 {
   "name": "ginjs-webpack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Webpack feature for ginjs.",
   "main": "index.js",
   "scripts": {
     "compile": "babel -d lib/ src/;",
     "buildDoc": "jsdoc -c jsdoc.json;",
-    "coverage": "nyc --reporter=lcov npm run mocha",
+    "coverage": "nyc --reporter=lcov npm run mocha;",
     "deploy": "npm run test && npm run buildDoc;",
-    "dev": "watchman-make --make='npm run' -p src -t compile -p lib -t mocha -p src -t flow -p src -t lint",
+    "dev": "watchman-make --make='npm run' -p src -t compile -p lib -t mocha -p src -t flow -p src -t lint;",
     "flow": "flow; test $? -eq 0 -o $? -eq 2;",
-    "lint": "eslint src",
-    "mocha": "mocha --opts ./mocha.opts",
-    "test": "npm run lint && npm run flow && npm run compile && npm run coverage && codecov"
+    "lint": "eslint src;",
+    "mocha": "mocha --opts ./mocha.opts;",
+    "test": "npm run lint && npm run flow && npm run compile && npm run coverage && codecov;"
   },
   "repository": {
     "type": "git",
