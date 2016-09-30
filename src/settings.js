@@ -1,4 +1,5 @@
 const path = require('path');
+
 const featurePath = path.join(process.env.PRODUCTLINE_DIR, 'features', 'gap');
 
 const settings = {
@@ -6,7 +7,7 @@ const settings = {
     context: featurePath,
     devtool: 'source-map',
     entry: ['./entrypoint'],
-    module: { 
+    module: {
       loaders: [],
     },
     output: {
