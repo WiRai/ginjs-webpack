@@ -1,6 +1,6 @@
 {
   "name": "ginjs-webpack",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Webpack feature for ginjs.",
   "main": "index.js",
   "scripts": {
@@ -47,6 +47,6 @@
     "webpack": "^1.14.0"
   },
   "peerDependencies": {
-    "ginjs": "0.2.x"
+    "ginjs": "0.3.x"
   }
 }
